@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wpoEOfc7jSV6hFwTntQOI1fuFrRIay+JnhQBKTiKS/b6MaCjLocK3qIw7lhmdlzghzcV1gClEq2oUY1VFX7qSw==",
+  "dgSpecHash": "TgB0tVw/uINNgIctgLcsQKhM363Nzz5xZaqBWMqbFC8wpudgKAkDB0D1tJGPR61FqwzMIaBiofIJlDHjg4rcZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\william130323\\source\\repos\\BattleShipsTxt\\BattleShipsTxt.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\william130323\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\William Spalding\\Documents\\GitHub\\Battleships\\BattleShipsTxt.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

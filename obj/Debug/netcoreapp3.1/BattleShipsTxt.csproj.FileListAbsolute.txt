@@ -11,3 +11,16 @@ C:\Users\william130323\source\repos\BattleShipsTxt\obj\Debug\netcoreapp3.1\Battl
 C:\Users\william130323\source\repos\BattleShipsTxt\obj\Debug\netcoreapp3.1\BattleShipsTxt.dll
 C:\Users\william130323\source\repos\BattleShipsTxt\obj\Debug\netcoreapp3.1\BattleShipsTxt.pdb
 C:\Users\william130323\source\repos\BattleShipsTxt\obj\Debug\netcoreapp3.1\BattleShipsTxt.genruntimeconfig.cache
+C:\Users\William Spalding\Documents\GitHub\Battleships\bin\Debug\netcoreapp3.1\BattleShipsTxt.exe
+C:\Users\William Spalding\Documents\GitHub\Battleships\bin\Debug\netcoreapp3.1\BattleShipsTxt.deps.json
+C:\Users\William Spalding\Documents\GitHub\Battleships\bin\Debug\netcoreapp3.1\BattleShipsTxt.runtimeconfig.json
+C:\Users\William Spalding\Documents\GitHub\Battleships\bin\Debug\netcoreapp3.1\BattleShipsTxt.runtimeconfig.dev.json
+C:\Users\William Spalding\Documents\GitHub\Battleships\bin\Debug\netcoreapp3.1\BattleShipsTxt.dll
+C:\Users\William Spalding\Documents\GitHub\Battleships\bin\Debug\netcoreapp3.1\BattleShipsTxt.pdb
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.csprojAssemblyReference.cache
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.AssemblyInfoInputs.cache
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.AssemblyInfo.cs
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.csproj.CoreCompileInputs.cache
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.dll
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.pdb
+C:\Users\William Spalding\Documents\GitHub\Battleships\obj\Debug\netcoreapp3.1\BattleShipsTxt.genruntimeconfig.cache
