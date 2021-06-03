@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,8 +8,17 @@ namespace BattleShipsTxt
    public class global
     {
 
+        //public variables
+        public static string userInput = "yes";
+        public static int difficulty = 0;
+        public static int aiSetup = 0;
+        public static int aiLocation = 0;
+
+
+        //end of public variables
         public static void startUp()
         {
+            
 
             var arr = new[]
             {
@@ -32,19 +42,27 @@ namespace BattleShipsTxt
                 Console.WriteLine(line);
            
 
-            Console.WriteLine("Welcome to Battleships Text Edition Version 0.1");
+            Console.WriteLine("Welcome to Battleships Text Edition Version 0.2");
             Console.WriteLine("Type 'start' to start or 'help' for help");
             readLine();
 
         }
 
-        public static void readLine()
+         public static void readLine()
         {
-            string userInput = (Console.ReadLine());
+             userInput = (Console.ReadLine());
 
             if ((userInput == "start") || (userInput == "s"))
             {
                 newGame();
+            }
+            else if ((userInput == "help") || (userInput == "h"))
+            {
+                
+            }
+            else
+            {
+                gamePlay();
             }
 
         }
@@ -65,7 +83,7 @@ namespace BattleShipsTxt
             Console.WriteLine("---+---+---+---+");
 
             Console.WriteLine("Set Dificulty: ");
-            int x =  Int32.Parse(Console.ReadLine());             //x and y length (its a square)
+            difficulty =  Int32.Parse(Console.ReadLine());             //x and y length (its a square)
 
             Console.WriteLine("Location X");
             int locationX = Int32.Parse(Console.ReadLine());
@@ -79,19 +97,19 @@ namespace BattleShipsTxt
 
             int b = 1;
 
-            int locationID = (x*x) - ((x * (x - locationY)) + (x-locationX));
+            int locationID = (difficulty * difficulty) - ((difficulty * (difficulty - locationY)) + (difficulty - locationX));
             
             
             
             int a1 = a;
 
 
-            while (b < x*x)
+            while (b < difficulty * difficulty)
             {
 
                  if (a == 1)
                  {
-                    while (d <= x)
+                    while (d <= difficulty)
                     {
                         Console.Write("+---");
                         d++;
@@ -108,7 +126,7 @@ namespace BattleShipsTxt
                  else 
                  {
                      Console.WriteLine();
-                     while (c <= x)
+                     while (c <= difficulty)
                      {
                         if (b == locationID)
                         {
@@ -127,7 +145,7 @@ namespace BattleShipsTxt
                      Console.WriteLine();
                    
 
-                     while (d <= x)
+                     while (d <= difficulty)
                      {
                         Console.Write("+---");
                         d++;
@@ -137,7 +155,59 @@ namespace BattleShipsTxt
                     Console.Write("+");
 
                  }                                                                             
-            }                            
+            }
+            
+            Console.WriteLine("Here is your ship Good luck...");
+            readLine();
+
+        }
+
+        public static void gamePlay()
+        {
+            if (aiSetup != 1)
+            {
+                //generates ai ship location (only does once per game)
+                int gridSize = difficulty * difficulty;
+
+                Random rnd = new Random();
+
+                int aiLocation = rnd.Next(0, gridSize);
+                aiSetup = 1;
+                Console.WriteLine(aiLocation);
+                gamePlay();
+            }
+            else
+            {
+                Console.WriteLine("Enter fire co-ords");
+                Console.WriteLine("X");
+                int locationX = Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine("Y:");
+                int locationY = Int32.Parse(Console.ReadLine());
+
+
+                int aimID = (difficulty * difficulty) - ((difficulty * (difficulty - locationY)) + (difficulty - locationX)); //turn coords into locationID
+
+                if (aimID == aiLocation)
+                {
+                    Console.WriteLine("Shot unsuccsessful try again");
+                    Console.WriteLine(aimID);
+                    gamePlay();
+                }
+                else
+                {
+                    Console.WriteLine("You have sunk the enamy battleship and have won the game!");
+                    Console.WriteLine("Type 'start' to play again");
+                    readLine();
+                }
+            }
+
+            
+           
+
+            
+
+
         }
    }    
 }
