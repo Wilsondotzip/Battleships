@@ -171,7 +171,7 @@ namespace BattleShipsTxt
 
                 Random rnd = new Random();
 
-                int aiLocation = rnd.Next(0, gridSize);
+                aiLocation = rnd.Next(0, gridSize);
                 aiSetup = 1;
                 Console.WriteLine(aiLocation);
                 gamePlay();
@@ -190,15 +190,16 @@ namespace BattleShipsTxt
 
                 if (aimID == aiLocation)
                 {
-                    Console.WriteLine("Shot unsuccsessful try again");
-                    Console.WriteLine(aimID);
-                    gamePlay();
-                }
-                else
-                {
                     Console.WriteLine("You have sunk the enamy battleship and have won the game!");
                     Console.WriteLine("Type 'start' to play again");
                     readLine();
+
+                }
+                else
+                {
+                    Console.WriteLine("Shot unsuccsessful try again");
+                    gamePlay();
+
                 }
             }
 
