@@ -58,7 +58,17 @@ namespace BattleShipsTxt
             }
             else if ((userInput == "help") || (userInput == "h"))
             {
-                
+                var arr = new[] {
+                @"start, s - starts a new game",
+                @"Havent written the help message yet, bad luck for you "
+                };
+
+                foreach (string line in arr)
+                {
+                    Console.WriteLine(line);
+                }
+
+                Console.ReadLine();
             }
             else
             {
