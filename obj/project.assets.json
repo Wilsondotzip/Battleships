@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\william130323\\.nuget\\packages\\": {}
+    "C:\\Users\\William Spalding\\.nuget\\packages\\": {},
+    "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\william130323\\Documents\\GitHub\\Battleships\\BattleShipsTxt.csproj",
+      "projectUniqueName": "C:\\Users\\William Spalding\\Documents\\GitHub\\Battleships\\BattleShipsTxt.csproj",
       "projectName": "BattleShipsTxt",
-      "projectPath": "C:\\Users\\william130323\\Documents\\GitHub\\Battleships\\BattleShipsTxt.csproj",
-      "packagesPath": "C:\\Users\\william130323\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\william130323\\Documents\\GitHub\\Battleships\\obj\\",
+      "projectPath": "C:\\Users\\William Spalding\\Documents\\GitHub\\Battleships\\BattleShipsTxt.csproj",
+      "packagesPath": "C:\\Users\\William Spalding\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\William Spalding\\Documents\\GitHub\\Battleships\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\william130323\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\William Spalding\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,18 +59,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.13, 3.1.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

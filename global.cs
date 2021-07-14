@@ -13,6 +13,7 @@ namespace BattleShipsTxt
         public static int difficulty = 0;
         public static int aiSetup = 0;
         public static int aiLocation = 0;
+        public static int gridSize = difficulty * difficulty;
 
 
         //end of public variables
@@ -177,11 +178,11 @@ namespace BattleShipsTxt
             if (aiSetup != 1)
             {
                 //generates ai ship location (only does once per game)
-                int gridSize = difficulty * difficulty;
+                gridSize = difficulty * difficulty;
 
                 Random rnd = new Random();
 
-                aiLocation = rnd.Next(0, gridSize);
+                aiLocation = rnd.Next(1, gridSize);
                 aiSetup = 1;
                 Console.WriteLine(aiLocation);
                 gamePlay();
@@ -208,15 +209,46 @@ namespace BattleShipsTxt
                 else
                 {
                     Console.WriteLine("Shot unsuccsessful try again");
-                    gamePlay();
+
+
+                    Random rnd = new Random();
+                    int aiAimID = rnd.Next(1, gridSize);
+                    
+
+                    Console.WriteLine("enamy aim" +aiAimID);
+                    if(aiAimID == aimID)
+                    {
+                        Console.WriteLine("The enemy has sunk your battleship");
+
+                        using (var readtext = new StreamReader(@"shipsunk.txt"))
+                        {
+                            while (!readtext.EndOfStream)
+                            {
+                                string currentLine = readtext.ReadLine();
+                                var args = currentLine.Split(' ');
+                                if (args.Length > 1)
+                                {
+                                    Console.WriteLine(args[0] + ":" + args[1]);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Invalid line");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        gamePlay();
+                    }
 
                 }
             }
 
-            
-           
+            	
 
-            
+
+
 
 
         }
